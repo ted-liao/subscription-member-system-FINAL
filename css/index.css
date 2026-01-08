@@ -2104,13 +2104,13 @@ button[onclick="joinQueue()"] {
 
 }
 
-/* 只讓左上角 Logo/標題不要黏在左邊 */
-.header{
-  padding-left: 18px;   /* 往右推(可調) */
-  padding-top: 10px;    /* 往下推(可調) */
+/* 只推左上角 Logo 區塊，不影響右上角登入/註冊 */
+.top-bar .header{
+  margin-left: 20px;   /* 往右 */
+  margin-top: 12px;    /* 往下 */
 }
 
-/* 確保點擊區跟著一起往內縮 */
-.header a{
+/* 讓點擊區跟著 margin 位置走、大小剛好包住文字 */
+.top-bar .header a{
   display: inline-block;
 }
