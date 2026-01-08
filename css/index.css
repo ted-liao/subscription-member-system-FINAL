@@ -145,11 +145,20 @@ a.btn {
     margin-bottom: 20px;
 }
 
-.tabs {
+/* .tabs {
     display: flex;
     gap: 10px;
     margin-bottom: 30px;
     flex-wrap: wrap;
+} */
+
+.tabs{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: fit-content;  /* 不吃滿整行 */
+  margin-left: auto;   /* 推到右邊 */
 }
 
 .tab {
@@ -2092,4 +2101,16 @@ button[onclick="joinQueue()"] {
 /* 當 Modal 加上 .active 時，裡面的 content 執行動畫 */
 .modal.active .modal-content {
     animation: modalPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+/* 只讓左上角 Logo/標題不要黏在左邊 */
+.header{
+  padding-left: 18px;   /* 往右推(可調) */
+  padding-top: 10px;    /* 往下推(可調) */
+}
+
+/* 確保點擊區跟著一起往內縮 */
+.header a{
+  display: inline-block;
 }
